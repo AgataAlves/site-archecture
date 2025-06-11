@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nossa Equipe - Archecture</title>
+    <link rel="shortcut icon" href="/img/flor.ico" type="image/x-icon" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="/estilo.css" />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="/js/javascript.js"></script>
+
+    <style>
+      body {
+        padding-top: 70px;
+      }
+
+      .team-member-img {
+        height: 280px; 
+        object-fit: cover; 
+        filter: grayscale(
+          80%
+        ); 
+        transition: filter 0.3s ease-in-out;
+      }
+
+      .card:hover .team-member-img {
+        filter: grayscale(
+          0%
+        ); 
+      }
+
+      .team-member-card {
+        transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+      }
+
+      .team-member-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
+      }
+
+      .card-text.position {
+        font-size: 0.95rem; 
+        color: #6c757d !important;
+      }
+
+
+      .card-text.description {
+        font-size: 0.875rem;
+        line-height: 1.5;
+      }
+
+      .navbar-nav .nav-item .nav-link.active-equipe {
+        color: var(
+          --bs-gold
+        ) !important;
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+      <div class="container">
+        <a class="navbar-brand fw-bold" href="/index.html"
+          ><i class="fas fa-drafting-compass me-2"></i> ARCHECTURE</a
+        >
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="/index.html">Início</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../index.html#sobre">Sobre</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../index.html#servicos">Serviços</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/projetos.html/projetos.html">Projetos</a>
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link active active-equipe"
+                aria-current="page"
+                href="/equipe.html/equipe.html"
+                >Equipe</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/contato.html/contato.html">Contato</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <main class="container py-5">
+      <section class="text-center my-5 py-3">
+        <h1 class="display-3 fw-bolder text-dark mb-3">
+          Conheça Nossa Equipe de Talentos
+        </h1>
+        <p class="lead text-secondary mx-auto" style="max-width: 700px">
+          Por trás de cada projeto inovador da Archecture, há uma equipe
+          dedicada de arquitetos e designers apaixonados, transformando visões
+          em realidade com excelência e criatividade.
+        </p>
+      </section>
+
+      <section class="row justify-content-center">
+        <div class="col-xl-4 col-md-6 mb-4">
+          <div class="card border-0 shadow team-member-card h-100">
+            <img
+              src="/img/ceo.jpeg"
+              class="card-img-top team-member-img"
+              alt="Foto de Piestre Thompson"
+            />
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title mb-0 fw-bold text-dark">
+                Piestre Thompson
+              </h5>
+              <div class="card-text position text-muted mb-2">
+                Arquiteto Fundador & CEO
+              </div>
+              <p class="card-text description text-secondary flex-grow-1">
+                Com mais de 20 anos de experiência, Piestre lidera com uma visão
+                que une estética, inovação técnica e um compromisso inabalável
+                com a excelência em cada detalhe.
+              </p>
+              <div class="mt-auto">
+                <a
+                  href="https://linkedin.com/in/piestrethompson"
+                  class="text-gold me-2"
+                  target="_blank"
+                  aria-label="LinkedIn de Piestre Thompson"
+                  ><i class="fab fa-linkedin-in fa-lg"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-xl-4 col-md-6 mb-4">
+          <div class="card border-0 shadow team-member-card h-100">
+            <img
+              src="/img/a1.jpeg"
+              class="card-img-top team-member-img"
+              alt="Foto de Miranda Vuit"
+            />
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title mb-0 fw-bold text-dark">Miranda Vuit</h5>
+              <div class="card-text position text-muted mb-2">
+                Designer Sustentável Sênior & Arquiteta
+              </div>
+              <p class="card-text description text-secondary flex-grow-1">
+                Especialista em criar ambientes que refletem a personalidade dos
+                clientes, com foco em conforto, elegância e a integração
+                harmoniosa da natureza, priorizando soluções sustentáveis.
+              </p>
+              <div class="mt-auto">
+                <a
+                  href="https://linkedin.com/in/mirandavuit"
+                  class="text-gold me-2"
+                  target="_blank"
+                  aria-label="LinkedIn de Miranda Vuit"
+                  ><i class="fab fa-linkedin-in fa-lg"></i
+                ></a>
+                <a
+                  href="https://instagram.com/mirandavuit"
+                  class="text-gold"
+                  target="_blank"
+                  aria-label="Instagram de Miranda Vuit"
+                  ><i class="fab fa-instagram fa-lg"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-xl-4 col-md-6 mb-4">
+          <div class="card border-0 shadow team-member-card h-100">
+            <img
+              src="/img/analista.jpeg"
+              class="card-img-top team-member-img"
+              alt="Foto de Lucy Flynt"
+            />
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title mb-0 fw-bold text-dark">Lucy Flynt</h5>
+              <div class="card-text position text-muted mb-2">
+                Gerente de Projetos & Design de Planejamento Urbano
+              </div>
+              <p class="card-text description text-secondary flex-grow-1">
+                Responsável por garantir que cada projeto seja entregue no
+                prazo, dentro do orçamento e com a máxima qualidade, desde a
+                concepção até a finalização.
+              </p>
+              <div class="mt-auto">
+                <a
+                  href="https://linkedin.com/in/lucyflynt"
+                  class="text-gold me-2"
+                  target="_blank"
+                  aria-label="LinkedIn de Lucy Flynt"
+                  ><i class="fab fa-linkedin-in fa-lg"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="text-white py-4 mt-5">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-md-4 text-center text-md-start mb-3 mb-md-0">
+            <p class="mb-0">© 2025 Archecture. Todos os direitos reservados.</p>
+          </div>
+          <div class="col-md-4 text-center mb-3 mb-md-0">
+            <a class="navbar-brand fw-bold fs-5" href="/index.html">
+              <i class="fas fa-drafting-compass me-2"></i> ARCHECTURE
+            </a>
+          </div>
+          <div class="col-md-4 text-center text-md-end">
+            <a
+              class="text-white me-3"
+              href="https://www.instagram.com/archecture"
+              target="_blank"
+              aria-label="Instagram"
+              ><i class="fab fa-instagram fa-lg"></i
+            ></a>
+            <a
+              class="text-white me-3"
+              href="https://www.linkedin.com/company/archecture"
+              target="_blank"
+              aria-label="LinkedIn"
+              ><i class="fab fa-linkedin-in fa-lg"></i
+            ></a>
+            <a
+              class="text-white"
+              href="https://www.pinterest.com/archecture"
+              target="_blank"
+              aria-label="Pinterest"
+              ><i class="fab fa-pinterest-p fa-lg"></i
+            ></a>
+          </div>
+        </div>
+        <hr class="my-4 border-light opacity-25" />
+        <div class="row">
+          <div class="col-12 text-center">
+            <ul class="list-inline mb-0">
+              <li class="list-inline-item">
+                <a
+                  class="text-white text-decoration-none px-2"
+                  href="/index.html"
+                  >Início</a
+                >
+              </li>
+              <li class="list-inline-item">
+                <a
+                  class="text-white text-decoration-none px-2"
+                  href="../index.html#sobre"
+                  >Sobre</a
+                >
+              </li>
+              <li class="list-inline-item">
+                <a
+                  class="text-white text-decoration-none px-2"
+                  href="../index.html#servicos"
+                  >Serviços</a
+                >
+              </li>
+              <li class="list-inline-item">
+                <a
+                  class="text-white text-decoration-none px-2"
+                  href="/projetos.html/projetos.html"
+                  >Projetos</a
+                >
+              </li>
+              <li class="list-inline-item">
+                <a
+                  class="text-white text-decoration-none px-2"
+                  href="/equipe.html/equipe.html"
+                  >Equipe</a
+                >
+              </li>
+              <li class="list-inline-item">
+                <a
+                  class="text-white text-decoration-none px-2"
+                  href="/contato.html/contato.html"
+                  >Contato</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contato - Archecture</title>
+    <link rel="shortcut icon" href="/img/flor.ico" type="image/x-icon" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="/estilo.css" />
+    <style>
+      body {
+        padding-top: 70px;
+      }
+
+      .navbar-nav .nav-item .nav-link.active-contact {
+        color: var(
+          --bs-gold
+        ) !important; 
+      }
+
+      .map-container {
+        border-radius: 0.5rem; 
+        overflow: hidden; 
+        border: 1px solid rgba(0, 0, 0, 0.479); 
+      }
+
+      .map-container iframe {
+        display: block; 
+      }
+
+      .form-floating .form-control,
+      .form-floating .form-select {
+        border-color: #ced4da; 
+        box-shadow: none; 
+        transition: border-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+      }
+
+      .form-floating .form-control:focus,
+      .form-floating .form-select:focus {
+        border-color: var(--bs-gold); 
+        box-shadow: 0 0 0 0.25rem rgba(240, 221, 159, 0.25);
+      }
+
+      .btn-gold {
+        background-color:  #b9975b; 
+        border-color: #9e8c52;
+        color: #fff;
+        transition: background-color 0.2s ease-in-out,
+          border-color 0.2s ease-in-out, transform 0.1s ease-in-out;
+      }
+
+      .btn-gold:hover {
+        background-color: #c5bda1;
+        border-color: #726f64;
+        transform: translateY(-1px); 
+      }
+
+      .btn-gold:active {
+        background-color: #3a3a39 !important;
+        border-color: #3d3d3b !important;
+      }
+
+      .list-unstyled .fa-2x {
+        vertical-align: middle;
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+      <div class="container">
+        <a class="navbar-brand fw-bold" href="/index.html"
+          ><i class="fas fa-drafting-compass me-2"></i> ARCHECTURE</a
+        >
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="/index.html">Início</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../index.html#sobre">Sobre</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../index.html#servicos">Serviços</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/projetos.html/projetos.html">Projetos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/equipe.html/equipe.html">Equipe</a>
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link active active-contact"
+                aria-current="page"
+                href="/contato.html/contato.html"
+                >Contato</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <main class="py-5" style="padding-top: 100px !important">
+      <div class="container py-5">
+        <div class="text-center mb-5">
+          <h1 class="display-3 fw-bolder text-dark">
+            Vamos Iniciar Seu Projeto
+          </h1>
+          <p class="lead text-secondary mx-auto" style="max-width: 700px">
+            Preencha o formulário abaixo ou utilize nossos canais de contato.
+            Estamos ansiosos para colaborar com você e dar vida aos seus sonhos
+            arquitetônicos.
+          </p>
+        </div>
+
+        <div class="row g-5">
+          <div class="col-lg-7">
+            <h4 class="mb-4 text-dark">Envie-nos uma Mensagem</h4>
+            <form class="needs-validation" novalidate>
+              <div class="form-floating mb-4">
+                <input
+                  type="text"
+                  class="form-control"
+                  id="floatingName"
+                  placeholder="Seu nome completo"
+                  required
+                />
+                <label for="floatingName">Nome Completo</label>
+                <div class="invalid-feedback">Por favor, insira seu nome.</div>
+              </div>
+              <div class="form-floating mb-4">
+                <input
+                  type="email"
+                  class="form-control"
+                  id="floatingEmail"
+                  placeholder="nome@exemplo.com"
+                  required
+                />
+                <label for="floatingEmail">Seu Melhor E-mail</label>
+                <div class="invalid-feedback">
+                  Por favor, insira um e-mail válido.
+                </div>
+              </div>
+              <div class="form-floating mb-4">
+                <select
+                  class="form-select"
+                  id="floatingSelect"
+                  aria-label="Selecione o tipo de interesse"
+                  required
+                >
+                  <option selected disabled value="">Selecione um...</option>
+                  <option value="Residencial">Projeto Residencial</option>
+                  <option value="Comercial">Projeto Comercial</option>
+                  <option value="Interiores">Design de Interiores</option>
+                  <option value="Consulta">Consulta Geral</option>
+                </select>
+                <label for="floatingSelect"
+                  >Qual seu principal interesse?</label
+                >
+                <div class="invalid-feedback">
+                  Por favor, selecione uma opção.
+                </div>
+              </div>
+              <div class="form-floating mb-4">
+                <textarea
+                  class="form-control"
+                  placeholder="Deixe sua mensagem aqui"
+                  id="floatingTextarea"
+                  style="height: 150px"
+                  required
+                ></textarea>
+                <label for="floatingTextarea">Sua Mensagem</label>
+                <div class="invalid-feedback">
+                  Por favor, escreva sua mensagem.
+                </div>
+              </div>
+
+              <button class="btn btn-gold btn-lg w-100" type="submit">
+                Enviar Mensagem
+              </button>
+            </form>
+          </div>
+
+          <div class="col-lg-5">
+            <div class="bg-light p-4 rounded shadow-sm h-100">
+              <h4 class="mb-4 text-dark">Nossos Contatos</h4>
+              <ul class="list-unstyled">
+                <li class="d-flex align-items-start mb-4">
+                  <div class="flex-shrink-0">
+                    <i class="fas fa-map-marker-alt fa-2x text-gold"></i>
+                  </div>
+                  <div class="flex-grow-1 ms-3">
+                    <strong class="text-dark">Nosso Escritório</strong>
+                    <p class="text-secondary mb-0">
+                      Av. das Nações, Lote 123, <br />Setor de Embaixadas Sul,
+                      Brasília - DF, 70200-000, Brasil
+                    </p>
+                  </div>
+                </li>
+                <li class="d-flex align-items-start mb-4">
+                  <div class="flex-shrink-0">
+                    <i class="fas fa-phone fa-2x text-gold"></i>
+                  </div>
+                  <div class="flex-grow-1 ms-3">
+                    <strong class="text-dark">Telefone</strong>
+                    <p class="text-secondary mb-0">+55 (61) 00000-0000</p>
+                  </div>
+                </li>
+                <li class="d-flex align-items-start mb-5">
+                  <div class="flex-shrink-0">
+                    <i class="fas fa-envelope fa-2x text-gold"></i>
+                  </div>
+                  <div class="flex-grow-1 ms-3">
+                    <strong class="text-dark">E-mail</strong>
+                    <p class="text-secondary mb-0">contato@archecture.com</p>
+                  </div>
+                </li>
+              </ul>
+
+              <div class="map-container shadow-sm">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3839.066496924843!2d-47.882142285189785!3d-15.794228989069532!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x935a3b2b4b2b4b2b%3A0x8b2b4b2b4b2b4b2b!2sSetor%20de%20Embaixadas%20Sul%20-%20Bras%C3%ADlia%2C%20DF!5e0!3m2!1sen!2sbr!4v1678901234567!5m2!1sen!2sbr"
+                  width="100%"
+                  height="250"
+                  style="border: 0"
+                  allowfullscreen=""
+                  loading="lazy"
+                  referrerpolicy="no-referrer-when-downgrade"
+                ></iframe>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer class="text-white py-4 mt-5">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-md-4 text-center text-md-start mb-3 mb-md-0">
+            <p class="mb-0">© 2025 Archecture. Todos os direitos reservados.</p>
+          </div>
+          <div class="col-md-4 text-center mb-3 mb-md-0">
+            <a class="navbar-brand fw-bold fs-5" href="/index.html">
+              <i class="fas fa-drafting-compass me-2"></i> ARCHECTURE
+            </a>
+          </div>
+          <div class="col-md-4 text-center text-md-end">
+            <a
+              class="text-white me-3"
+              href="https://www.instagram.com/archecture"
+              target="_blank"
+              aria-label="Instagram"
+              ><i class="fab fa-instagram fa-lg"></i
+            ></a>
+            <a
+              class="text-white me-3"
+              href="https://www.linkedin.com/company/archecture"
+              target="_blank"
+              aria-label="LinkedIn"
+              ><i class="fab fa-linkedin-in fa-lg"></i
+            ></a>
+            <a
+              class="text-white"
+              href="https://www.pinterest.com/archecture"
+              target="_blank"
+              aria-label="Pinterest"
+              ><i class="fab fa-pinterest-p fa-lg"></i
+            ></a>
+          </div>
+        </div>
+        <hr class="my-4 border-light opacity-25" />
+        <div class="row">
+          <div class="col-12 text-center">
+            <ul class="list-inline mb-0">
+              <li class="list-inline-item">
+                <a
+                  class="text-white text-decoration-none px-2"
+                  href="/index.html"
+                  >Início</a
+                >
+              </li>
+              <li class="list-inline-item">
+                <a
+                  class="text-white text-decoration-none px-2"
+                  href="../index.html#sobre"
+                  >Sobre</a
+                >
+              </li>
+              <li class="list-inline-item">
+                <a
+                  class="text-white text-decoration-none px-2"
+                  href="../index.html#servicos"
+                  >Serviços</a
+                >
+              </li>
+              <li class="list-inline-item">
+                <a
+                  class="text-white text-decoration-none px-2"
+                  href="/projetos.html/projetos.html"
+                  >Projetos</a
+                >
+              </li>
+              <li class="list-inline-item">
+                <a
+                  class="text-white text-decoration-none px-2"
+                  href="/equipe.html/equipe.html"
+                  >Equipe</a
+                >
+              </li>
+              <li class="list-inline-item">
+                <a
+                  class="text-white text-decoration-none px-2"
+                  href="/contato.html/contato.html"
+                  >Contato</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="/js/javascript.js"></script>
+  </body>
+</html>

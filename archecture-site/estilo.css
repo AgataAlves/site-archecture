@@ -1,0 +1,132 @@
+/* Paleta de Cores e Tipografia */
+:root {
+    --cor-gold: #b9975b;
+    --cor-dark: #212529;
+    --cor-light: #ffffff;
+    --cor-light-dark: #dfba84;
+}
+
+body {
+    font-family: 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+}
+
+/* --- Barra de Navegação --- */
+.navbar {
+    background-color:#7c7979;
+    transition: background-color 0.4s ease-in-out;
+}
+
+.navbar.scrolled {
+    background-color: var(--cor-light-dark);
+}
+
+.navbar-brand {
+    letter-spacing: 2px;
+}
+
+.nav-link {
+    color: #ffffff !important;
+    font-weight: 500;
+}
+
+.nav-link.active, .nav-link:hover {
+    color: var(--cor-gold) !important;
+}
+
+body {
+    background-color: #c5c1c1fd;
+    color: #000000;
+    font-family: 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+}
+
+/* --- Cabeçalho com Carrossel --- */
+.c-item {
+    height: 100vh;
+    min-height: 500px;
+}
+
+.c-img {
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(0.5);
+}
+
+.carousel-caption {
+    bottom: 22%;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.349);
+}
+
+/* --- Botões e Badges --- */
+.btn-gold {
+    background-color: var(--cor-gold);
+    color: #0e0d0d;
+    border: 2px solid var(--cor-gold);
+    transition: all 0.3s ease;
+}
+
+.btn-gold:hover {
+    background-color: transparent;
+    color: var(--cor-gold);
+    border-color: var(--cor-gold);
+}
+
+.bg-gold-light {
+    background-color: var(--cor-light-gold);
+}
+
+/* --- Seções e Acordeão --- */
+.accordion-button:not(.collapsed) {
+    color: #d8ab78;
+    background-color: var(--cor-light-gold);
+    font-weight: bold;
+}
+
+.accordion-button:focus {
+    box-shadow: 0 0 0 0.25rem rgb(70, 67, 64);
+}
+
+.text-gold {
+    color: var(--cor-gold) !important;
+}
+
+/* --- Depoimentos --- */
+.depoimento-card {
+    max-width: 800px;
+    text-align: center;
+}
+
+#carouselDepoimentos .carousel-control-prev-icon,
+#carouselDepoimentos .carousel-control-next-icon {
+    background-color: var(--cor-dark);
+    border-radius: 50%;
+    padding: 1.5rem;
+}
+
+/* --- Página de Projetos --- */
+.project-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 1rem 3rem rgba(0,0,0,.175) !important;
+}
+
+/* --- Rodapé --- */
+footer {
+    background-color: var(--cor-dark);
+}
+
+
+.form-control.is-invalid, .was-validated .form-control:invalid {
+    border-color: #dc3545;
+}
+
+.form-control.is-valid, .was-validated .form-control:valid {
+    border-color: #198754;
+}
+
+.form-control:focus {
+    border-color: #B9975B; 
+    box-shadow: 0 0 0 0.25rem rgba(247, 213, 154, 0.25);
+}
